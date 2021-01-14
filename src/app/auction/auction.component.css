@@ -1,6 +1,19 @@
-.grid-container {
+.grid-header-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 10px;
+  grid-template-columns: auto 350px auto auto;
+  background-color: #2196F3;
+  padding: 1px;
+}
+.grid-data-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 1px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
+  font-size: 12px;
+  text-align: center;
 }

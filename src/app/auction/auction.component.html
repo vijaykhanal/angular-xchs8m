@@ -1,9 +1,16 @@
 <h2>Auction Item List</h2>
+<div class="grid-header-container">
+     <div class="grid-item">AuctionItemId</div>
+    <div class="grid-item">Item Description</div>
+    <div class="grid-item">Current Bid</div>
+    <div class="grid-item">Reserve Price</div>
+   </div>
 <div *ngFor="let auctionItem of auctionItemList">
-	<div class="grid-container">
-     <div class="item1">{{product.auctionItemId}}</div>
-    <div class="item2">{{product.item.description}}</div>
-    <div class="item3">{{product.currentBid}}</div>
-    <div class="item4">{{product.reservePrice}}</div>
+  
+	<div class="grid-data-container">
+     <div class="grid-item">{{auctionItem.auctionItemId}}</div>
+    <div class="grid-item">{{auctionItem.item.description}}</div>
+    <div class="grid-item">{{auctionItem.currentBid}}</div>
+    <div class="grid-item">{{auctionItem.reservePrice}}</div>
    </div>
 </div>
